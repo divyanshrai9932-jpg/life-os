@@ -14,10 +14,12 @@ It's not a journal. It's not a to-do list. It's a living system that gets smarte
 
 ## Getting started
 
-1. Open this folder with Claude (via Cowork, Claude Code, or any Claude-powered tool)
-2. Claude will read `SETUP.md` and walk you through an onboarding flow
-3. Answer the questions — Claude will populate your files
-4. From there, just talk. Share what's happening and Claude keeps everything updated.
+1. [Download the ZIP](https://github.com/sanketsahu/life-os/archive/refs/heads/main.zip) and unzip it
+2. Open [Claude Cowork](https://claude.ai/cowork) on your desktop
+3. Drop the folder into Claude Cowork
+4. Claude will walk you through an onboarding flow and ask you some questions
+5. Answer them — Claude will populate your files
+6. From there, just talk. Share what's happening and Claude keeps everything updated.
 
 ---
 
