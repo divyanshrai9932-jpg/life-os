@@ -1,3 +1,11 @@
+<p align="center">
+  <img src="assets/logo.png" alt="Life OS Logo" width="120">
+</p>
+
+<p align="center">
+  <img src="assets/banner.png" alt="Life OS Banner" width="100%">
+</p>
+
 # Life OS
 
 A markdown-based personal documentation system, designed to be maintained collaboratively with Claude.
