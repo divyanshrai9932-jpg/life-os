@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1280px;
+    height: 640px;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .banner {
+    width: 1280px;
+    height: 640px;
+    position: relative;
+    background: linear-gradient(180deg, #fdf6e3 0%, #fff8f0 40%, #ffffff 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Illustrated sky/landscape scene at top */
+  .illustration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 320px;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(180deg, black 0%, black 55%, transparent 100%);
+    mask-image: linear-gradient(180deg, black 0%, black 55%, transparent 100%);
+  }
+
+  .sky {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(180deg, #fef3c7 0%, #bae6fd 30%, #7dd3fc 60%, #7dd3fc 100%);
+  }
+
+  /* Sun */
+  .sun {
+    position: absolute;
+    top: 30px;
+    right: 200px;
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle, #fbbf24 0%, #f59e0b 60%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(2px);
+  }
+
+  /* Clouds - hand-drawn style */
+  .cloud {
+    position: absolute;
+    background: #fefce8;
+    border-radius: 50%;
+    filter: url(#rough);
+  }
+  .cloud-1 { top: 20px; left: 60px; width: 120px; height: 50px; opacity: 0.9; }
+  .cloud-1::before { content: ''; position: absolute; top: -20px; left: 25px; width: 70px; height: 45px; background: #fefce8; border-radius: 50%; }
+  .cloud-1::after { content: ''; position: absolute; top: -10px; left: 55px; width: 50px; height: 35px; background: #fefce8; border-radius: 50%; }
+
+  .cloud-2 { top: 40px; left: 350px; width: 100px; height: 40px; opacity: 0.8; }
+  .cloud-2::before { content: ''; position: absolute; top: -15px; left: 20px; width: 60px; height: 38px; background: #fefce8; border-radius: 50%; }
+
+  .cloud-3 { top: 15px; left: 800px; width: 140px; height: 55px; opacity: 0.85; }
+  .cloud-3::before { content: ''; position: absolute; top: -25px; left: 30px; width: 80px; height: 50px; background: #fefce8; border-radius: 50%; }
+  .cloud-3::after { content: ''; position: absolute; top: -15px; left: 70px; width: 55px; height: 40px; background: #fefce8; border-radius: 50%; }
+
+  /* Mountains/hills */
+  .hills {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 180px;
+  }
+
+  .hill {
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  .hill-1 {
+    bottom: -60px;
+    left: -100px;
+    width: 500px;
+    height: 220px;
+    background: linear-gradient(180deg, #86efac 0%, #4ade80 100%);
+    opacity: 0.7;
+  }
+  .hill-2 {
+    bottom: -80px;
+    left: 250px;
+    width: 600px;
+    height: 250px;
+    background: linear-gradient(180deg, #6ee7b7 0%, #34d399 100%);
+    opacity: 0.6;
+  }
+  .hill-3 {
+    bottom: -70px;
+    right: -50px;
+    width: 450px;
+    height: 200px;
+    background: linear-gradient(180deg, #a7f3d0 0%, #6ee7b7 100%);
+    opacity: 0.7;
+  }
+
+  /* Water/lake */
+  .water {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(180deg, #38bdf8 0%, #0ea5e9 50%, #0284c7 100%);
+    opacity: 0.5;
+  }
+
+  /* Scattered illustrated elements */
+  .element {
+    position: absolute;
+    font-size: 28px;
+    filter: drop-shadow(1px 1px 0px rgba(0,0,0,0.1));
+  }
+
+  /* Butterflies / birds */
+  .bird { font-size: 22px; }
+  .b1 { top: 60px; left: 180px; transform: rotate(-10deg); }
+  .b2 { top: 90px; left: 520px; transform: rotate(5deg); }
+  .b3 { top: 45px; left: 680px; transform: rotate(-15deg); }
+  .b4 { top: 100px; left: 900px; transform: rotate(8deg); }
+  .b5 { top: 70px; left: 1050px; transform: rotate(-5deg); }
+  .b6 { top: 130px; left: 150px; transform: rotate(12deg); }
+  .b7 { top: 110px; left: 1150px; transform: rotate(-8deg); }
+
+  /* Trees */
+  .tree { font-size: 36px; }
+  .t1 { top: 155px; left: 40px; }
+  .t2 { top: 150px; left: 180px; font-size: 42px; }
+  .t3 { top: 160px; right: 120px; }
+  .t4 { top: 148px; right: 40px; font-size: 40px; }
+  .t5 { top: 158px; left: 400px; font-size: 32px; }
+  .t6 { top: 152px; right: 300px; font-size: 38px; }
+
+  /* Flowers */
+  .flower { font-size: 20px; }
+  .f1 { top: 190px; left: 100px; }
+  .f2 { top: 195px; left: 300px; }
+  .f3 { top: 188px; right: 200px; }
+  .f4 { top: 192px; right: 400px; }
+
+  /* Notebook / pen icons for "life documentation" feel */
+  .icon-notebook { top: 175px; left: 600px; font-size: 26px; }
+  .icon-pen { top: 180px; left: 650px; font-size: 22px; transform: rotate(30deg); }
+
+  /* Text content */
+  .content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  .title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 82px;
+    line-height: 1.05;
+    color: #1a1a1a;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+  }
+
+  .subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #374151;
+    margin-bottom: 12px;
+  }
+
+  .description {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #6b7280;
+    line-height: 1.6;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  /* Subtle texture overlay */
+  .texture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.015'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  /* Hand-drawn border effect */
+  .banner::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #e5e7eb, transparent);
+  }
+</style>
+</head>
+<body>
+  <div class="banner">
+    <div class="illustration">
+      <div class="sky"></div>
+      <div class="sun"></div>
+
+      <div class="cloud cloud-1"></div>
+      <div class="cloud cloud-2"></div>
+      <div class="cloud cloud-3"></div>
+
+      <div class="hills">
+        <div class="hill hill-1"></div>
+        <div class="hill hill-2"></div>
+        <div class="hill hill-3"></div>
+        <div class="water"></div>
+      </div>
+
+      <!-- Birds -->
+      <span class="element bird b1">&#x1F426;</span>
+      <span class="element bird b2">&#x1F426;</span>
+      <span class="element bird b3">&#x1F54A;&#xFE0F;</span>
+      <span class="element bird b4">&#x1F426;</span>
+      <span class="element bird b5">&#x1F54A;&#xFE0F;</span>
+      <span class="element bird b6">&#x1F98B;</span>
+      <span class="element bird b7">&#x1F98B;</span>
+
+      <!-- Trees -->
+      <span class="element tree t1">&#x1F333;</span>
+      <span class="element tree t2">&#x1F332;</span>
+      <span class="element tree t3">&#x1F333;</span>
+      <span class="element tree t4">&#x1F332;</span>
+      <span class="element tree t5">&#x1F33F;</span>
+      <span class="element tree t6">&#x1F333;</span>
+
+      <!-- Flowers -->
+      <span class="element flower f1">&#x1F33C;</span>
+      <span class="element flower f2">&#x1F337;</span>
+      <span class="element flower f3">&#x1F33A;</span>
+      <span class="element flower f4">&#x1F33B;</span>
+    </div>
+
+    <div class="texture"></div>
+
+    <div class="content">
+      <div class="title">Life OS</div>
+      <div class="subtitle">Your life, documented. Claude keeps it organized.</div>
+      <div class="description">A markdown-based personal documentation system.<br>Profile, health, career, decisions, relationships — all in one place.</div>
+    </div>
+  </div>
+</body>
+</html>
